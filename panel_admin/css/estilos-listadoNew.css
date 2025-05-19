@@ -1,0 +1,199 @@
+p {
+    font-size: 12px;
+}
+
+.listado-trabajos{
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    padding: 10px;
+}
+
+.listado-trabajos li {
+    position: relative;
+    list-style: none;
+    background: var(--color-seccion);
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 0 #0001;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.listado-trabajos li:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 10px 0 rgba(35, 73, 149, 0.333);
+}
+
+.listado-trabajos .trabajo {
+    overflow: hidden;
+    display: block;
+}
+
+/* Parte puesta por Carlos */
+
+ .btn-rojo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff0000;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-rojo:hover {
+    background-color: #cc0000;
+}
+
+.btn-amarillo {
+    position: absolute;
+    top: 10px;
+    right: 52px;
+    background-color: #ffd900;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.btn-amarillo:hover {
+    background-color: #cc6300;
+}
+
+
+.listado {
+    display: flex
+;
+    flex-direction: row;
+    background-color: var(--color-seccion);
+    height: 250px;
+    border: 1px solid var(--color-separador);
+    border-radius: 10px;
+}
+/* Hasta aqui */
+
+
+.listado-trabajos .imagen-trabajo {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+    padding: 20px;
+    background: #eee;
+}
+.listado-trabajos .imagen-trabajo .imagen {
+    width: 141px;
+    height: 230px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+/*
+    metas-session
+*/
+
+.listado-trabajos .contenedor-infoTrabajo {
+    position: relative;
+    padding: 20px;
+    display: block;
+    height: 220px;
+}
+
+
+/*
+    lol
+*/
+
+.listado-trabajos .metaDatos .tituloTrabajo {
+    height: auto; /*antes 60*/
+    overflow: hidden;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.listado-trabajos .metaDatos .descripcion {
+    height: auto; /*antes 45px*/
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.listado-trabajos .metaDatos .descripcion p {
+    margin-bottom: 5px;
+    color: var(--color-texto-sutil);
+    
+}
+
+.listado-trabajos .metaDatos .descripcion i {
+    padding: .5rem;
+    color: var(--color-secundario);
+}
+
+.listado-trabajos .resumen p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-texto-sutil); 
+    font-size: 12px;
+}
+
+.listado-trabajos .resumen .btn {
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
+    
+    border: 1px solid var(--color-titulo-acento);
+        color: var(--color-titulo-acento);
+    line-height: 2.2;
+    padding: 0 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 0.8rem;
+        border-radius: .25rem; 
+        font-weight: 600; 
+        letter-spacing: 0.8px;
+        text-transform: uppercase; 
+}
+
+.listado-trabajos .resumen .btn:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.164);
+    border: 1px solid var(--color-acento);
+    background: var(--color-acento);
+    color: var(--color-titulo-acento-dark);
+    right: 15px;
+}
+
+
+/*
+    == pantallas
+*/    
+@media screen and (max-width:780px) {
+    .listado-trabajos{    
+        width: 96%;
+    }
+    .listado-trabajos li:hover{    
+        transform: none;    
+        box-shadow: none;
+    }
+}
+@media screen and (max-width:560px) {
+    .listado-trabajos .imagen-trabajo{    
+        float: none;    
+        margin-right: 0;
+    }
+    .listado-trabajos .imagen-trabajo .imagen {
+        width: 100%;
+    }
+}
+
