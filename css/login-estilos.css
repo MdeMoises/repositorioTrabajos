@@ -1,0 +1,241 @@
+@import url('estilos.css');
+
+* {
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*------------------------- Volver --------------------------------------*/
+.enlace {
+    margin: 1rem;
+    position: absolute;
+}
+
+/*--------------------------- CONTENEDOR PRINCIPAL ----------------------*/
+.login-contenedor{
+    background-color: var(--color-seccion);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(81, 45, 168, 0.15);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.login-contenedor p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px;
+}
+
+.login-contenedor span {
+    font-size: 12px;
+}
+
+.login-contenedor a {
+    color: var(--color-texto);
+    font-size: 13px;
+    text-decoration: none;
+    margin: .9375rem 0 .625rem;
+}
+
+.login-contenedor a:hover {
+    color: var(--color-titulo);
+    text-decoration-line: underline;
+}
+
+
+.login-contenedor button {
+    background-color: var(--color-titulo);
+    color: var(--color-seccion);
+    margin-top: 10px;
+    font-size: .75rem; 
+    padding: .625rem 2.8125rem; /*general*/
+    border: 1px solid transparent; /*general*/
+    border-radius: .25rem; /*general*/
+    font-weight: 600; /*general*/
+    letter-spacing: 0.8px; /*gneral*/
+    text-transform: uppercase; /*mayusculas*/
+    cursor: pointer; /*gemeral*/
+    transition: all 0.3s ease-in-out; /*general*/
+}
+
+.login-contenedor button:hover {
+    background-color: var(--color-acento);
+    color: var(--color-titulo-acento-dark);
+}
+
+.login-contenedor button.oculto {
+    background-color: transparent;
+    border-color: var(--color-seccion);
+    transition: 0.5s;
+}
+
+.login-contenedor button.oculto:hover {
+    background-color: var(--color-acento);
+    color: var(--color-titulo-acento-dark);
+    border-color: transparent;
+}
+
+.login-contenedor form {
+    background-color: var(--color-seccion);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    height: 100%;
+}
+
+.login-contenedor input {
+    background-color: var(--color-dominante);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid transparent; 
+    transition: border-color 0.3s; 
+    color: var(--color-titulo);
+}
+
+.login-contenedor input:focus {
+    border-color:  var(--color-secundario); /* Cambia el color del borde al enfocar */
+    outline: none;
+    font-size: 14px; 
+}
+
+/*--------------------------- CONTENEDOR ACCEDER/REGISTRARSE ----------------------*/
+.formulario-contenedor {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out; /*comenzará lentamente, acelerará en el medio y luego desacelerará hacia el final*/
+}
+
+.acceder {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+/*animacion*/
+.login-contenedor.active .acceder {
+    transform: translateX(100%);
+}
+
+.registrarse{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.login-contenedor.active .registrarse{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/*--------------------------- INTERRUPTORES ----------------------*/
+
+.interruptor-contenedor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.login-contenedor.active .interruptor-contenedor {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.interruptor {
+    background-color: var(--color-secundario);
+    height: 100%;
+    color:  var(--color-seccion);
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translate(0);
+    transition: all 0.1 ease-in-out;
+}
+
+.login-contenedor.active .interruptor{
+    transform: translateX(50%);
+    background-color: var(--color-acento);
+    color:  var(--color-titulo-acento-dark);
+}
+
+.login-contenedor.active .interruptor button{
+    background-color: transparent;
+    border: 1px solid  var(--color-titulo-acento-dark);
+    color:  var(--color-titulo-acento-dark);
+}
+
+.login-contenedor.active .interruptor button:hover{
+    background-color:  var(--color-secundario);
+    border: 1px solid transparent;
+    color: var(--color-seccion);
+}
+
+.interruptor-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.interruptor-izquierdo {
+    transform: translateX(-200%);
+}
+
+.login-contenedor.active .interruptor-izquierdo{
+    transform: translateX(0);
+}
+
+.interruptor-derecho{
+    right: 0;
+    transform: translateX(0);
+}
+
+.login-contenedor.active .interruptor-derecho{
+    transform: translateX(200%);
+}

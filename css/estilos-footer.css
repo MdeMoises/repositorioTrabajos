@@ -1,0 +1,188 @@
+@import url('estilos.css');
+
+*{
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-seccion);
+    margin-top: 45px;
+}
+
+.contenedor-footer{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-seccion);
+}
+
+h3{
+    font-size: 25px;
+    color: var(--color-titulo);
+}
+
+/*----------------------------- 💌 LOGO ----------------------------*/
+.contenedor-footer .logo {
+    display: flex;
+    max-width: 100%;
+    max-height: 4rem;
+    padding: .625rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 3rem;
+    height: auto;
+}
+
+.contenedor-footer span {
+    margin-left: .7rem;
+    line-height: 1.2;
+    font-size: 0.7rem;
+}
+
+/*----------------------------- 💌 QUIENES SOMOS ----------------------------*/
+
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px 30px 20px;
+}
+
+.descripcion{
+    width: 400px;
+}
+
+.descripcion p{
+    font-size: 12px;
+}
+
+#masinfo{
+    margin-top: 25px;
+    padding: 6px 35px 7px 35px;
+    border-radius: 0%;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: none;
+}
+
+/*----------------------------- 💌 SEDES ----------------------------*/
+
+.footer-sedes{
+    width: 25%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -40px;
+}
+
+.footer-sedes ul li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color-texto);
+    display: block;
+    text-align: center;
+    margin-bottom: 9px;
+    margin-top: 2px;
+}
+
+/*----------------------------- 💌 ENLACES ----------------------------*/
+
+.footer-enlaces h3{
+    text-align: center;
+}
+
+.footer-enlaces{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-enlaces a{
+    font-size: 12px;
+    color: var(--color-texto-sutil);
+}
+
+.enlace-ugma{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.enlace-ig{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-enlaces i{
+    background-color: var(--color-acento);
+    padding: 8px;
+    margin-right: 7px;
+}
+
+#btnfooter{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 100px;
+    height: 50px;
+    border-radius: 0%;
+}
+
+/*----------------------------- 💌 CORREO ----------------------------*/
+
+.footer-correo{
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.footer-correo h4{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-texto);
+}
+
+.enlace-correo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+}
+
+.enlace-correo-img{
+    padding: 7.5px;
+    border: 1px solid var(--color-texto);
+    margin-right: 6px;
+}
+
+.footer-correo a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--color-texto-sutil);
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.imagen-footer{
+    width: 230px;
+    height: 200px;
+}
+
+/*----------------------------- 💌 COPYRIGHT ----------------------------*/
+
+.contenedor-copyright{
+    color: var(--color-texto-sutil);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid var(--color-separador);
+}

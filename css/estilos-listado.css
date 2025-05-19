@@ -1,0 +1,68 @@
+@import url('estilos.css');
+
+
+
+.listado-contenedor{
+  
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 20px;
+    margin-top: 80px;
+
+    width: 1100px;
+    align-content: center;
+    margin-left: 85px;
+}
+
+.coincidencias{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: var(--color-secundario);
+    margin-bottom: 2px;
+    padding: 8px;
+}
+
+
+
+/*----------------------------- 💌 IMAGEN ----------------------------*/
+
+.listado{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-seccion);
+    height: 250px;
+    border: 1px solid var(--color-separador);
+    border-radius: 10px;
+}
+
+.listadoizq {
+    width: 220px;
+    margin: 20px;
+    background-color: var(--color-acento);
+    border-radius: 10px;
+}
+
+.listadoizq img{
+    width: 100%;
+}
+
+.listadoder{
+    font-size: 15px;
+    margin-left:10px;
+    margin-top: 32.5px;
+    width: 750px;
+}
+
+
+/*----------------------------- 💌 TEXTO ----------------------------*/
+
+.descripcion p, span{
+    margin-bottom: 5px;
+}
+
+.descripcion span{
+    color: var(--color-texto-sutil);
+}

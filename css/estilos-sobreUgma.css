@@ -1,0 +1,223 @@
+body {
+    height: 3000px;
+}
+
+main {
+    width: 1100px;
+    margin: auto;
+}
+
+section {
+    margin-top: 100px;
+    padding: 20px;
+    height: 80vh;
+}
+
+
+/*
+        --- 💙 TITULO PAGINA
+*/
+
+
+.titulo-pagina{
+    color: white;
+    width: 100%;
+    height: 65vh;
+    align-content: end;
+    box-shadow: 0 2px 10px rgba(27, 55, 90,0.2);
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.imagen-titulo {
+    background-image: url(../img/ugma6.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position-y: 400px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    filter: brightness(60%);
+}
+
+.contenido-titulo {
+    position: relative;
+    z-index: 3;
+}
+
+.titulo-pagina h1{
+    text-align: center;
+}
+
+.titulo-pagina span, .titulo-pagina p {
+    font-size: .8rem;
+}
+
+.titulo-pagina p {
+    width: 60%;
+    margin: auto;
+}
+
+/*
+        --- 💙 HISTORIA
+*/
+
+.historia{
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    height: 80vh;
+}
+
+.historia h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.historia img{
+    width: 60%;
+    object-fit: cover;
+    position: relative;
+}
+
+.historia p,.historia span {
+    font-size: .8rem;
+}
+
+.contenido-historia {
+    background: var(--color-seccion);
+    z-index: 1;
+    min-width: none;
+    width: 600px;
+    align-self: center;
+    padding: 20px;
+    transition: all .3s ease;
+    position: absolute;
+    left: 45%;
+    box-shadow: 0 2px 10px rgba(27, 55, 90,0.2);
+}
+
+.contenido-historia .fotos {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.contenido-historia button {
+    padding: 10px 15px;
+    display: flex;
+    margin-top: 10px;
+    justify-self: flex-end;
+}
+
+.fotos img {
+    width: 48%;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(27, 55, 90,0.2);
+}
+
+.fotos img:hover {
+    scale: 1.5;
+    position: relative;
+    z-index: 2;
+    border: 2px solid var(--color-acento);
+}
+
+
+/*
+        --- 💙 MISION - VISION - VALORES
+*/
+
+
+.cajitas-contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+
+/* MISION Y VISION*/
+
+.cajita-mision,.cajita-vision{
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(27, 55, 90,0.2);
+    transition: all .3s ease;
+}
+
+.cajita-mision h2, .cajita-vision h2{
+    padding: 10px 15px;
+}
+
+.cajita-mision:hover , .cajita-vision:hover {
+    background: var(--color-titulo);
+    color: var(--color-seccion);
+}
+
+
+/* VALORES */
+
+.cajita-valores{
+    margin-top: 100px;
+    grid-column: 1/ -1;
+    padding: 30px 100px 70px 100px;
+    background: var(--color-seccion);
+}
+
+.cajita-valores h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.cajita-valores i {
+    padding: 5px;
+    background: var(--color-titulo);
+    color: var(--color-seccion);
+    border-radius: 50%;
+    font-size: .75rem;
+}
+
+
+
+/*
+        --- 💙 EXTRAS GENERALES
+*/
+
+.cajitas-contenedor .icon, .contenido-historia .icon{
+    margin-right: .50rem;
+}
+
+.historia span, .titulo-pagina span  {
+    font-weight: 500;
+}
+
+
+
+/*
+        --- 💙 PANTALLAS
+*/
+
+@media (min-width: 1920px){
+    .historia p,.historia span,.titulo-pagina span, .titulo-pagina p {
+        font-size: .9rem;
+    }
+    .titulo-pagina{
+        height: 40vh;
+    }
+    .contenido-historia {
+        left: 52%;
+    }
+}
+
+

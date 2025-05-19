@@ -1,0 +1,129 @@
+@import url('estilos.css');
+
+.contenedor-trabajo-especifico{
+    background-color: var(--color-seccion);
+    align-self: center;
+    padding-top: 150px;
+}
+
+/*----------------------------- 💌 PROPIEDADES ----------------------------*/
+
+.seccion-arriba{
+    background-color: var(--color-seccion);
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin-left: 305px;
+    height: 275px;
+}
+
+.imagen{
+    height: 350px;
+    margin-right: 100px;
+}
+
+.imagen img{
+    height: 100%;
+}
+
+.seccion-arriba h3{
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 40px;
+    color: var(--color-texto);
+}
+
+.seccion-arriba p{
+    color: var(--color-texto-sutil);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.seccion-arriba i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+#autor{
+    margin-top: 27px;
+}
+
+#facultad i{
+    margin-right: 10px;
+}
+
+#facultad{
+    margin-top: 25px;
+}
+
+#carrera{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+.titulo-2{
+    margin-top: -55px;
+}
+
+#descarga{
+    padding: 6px 12px 6px 12px;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 0%;
+    margin-top: 55px;
+}
+
+#descarga i{
+    font-size: 13px;
+}
+
+/*----------------------------- 💌 DEMAS ----------------------------*/
+
+.seccion-abajo{
+    width: 870px;
+    margin-left: 100px;
+    background-color: var(--color-dominante);
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.complementos{
+    width: 340px;
+    margin-left: 20px;
+}
+
+.resumen{
+    width: 450px;
+    padding-right: 45px;
+    border-right: 1px solid var(--color-separador);
+}
+
+.resumen span{
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+.resumen p{
+    color: var(--color-texto-sutil);
+    font-size: 13px;
+    margin-top: 12.5px;
+}
+
+.complementos p{
+    color: var(--color-texto-sutil);
+    font-size: 12px;
+}
+
+.complementos span{
+    color: var(--color-texto);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.complementos i{
+    color: var(--color-titulo-acento);
+    margin-right: 6px;
+    font-size: 10px;
+}

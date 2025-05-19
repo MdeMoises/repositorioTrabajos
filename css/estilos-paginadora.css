@@ -1,0 +1,45 @@
+.botones-paginadora .boton {
+    padding: 30px;
+    border: 1px solid blue;
+    font-size: 20px;
+    margin: 6px;
+    color: gray;
+}
+
+.botones-paginadora .boton_p {
+    padding: 30px;
+    border: 1px solid blue;
+    font-size: 20px;
+    margin: 6px;
+    color: blue;
+}
+
+.botones-paginadora{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px 0px 100px;
+    width: 1000px;
+}.botones-paginadora .boton {
+                padding: 30px;
+                border: 1px solid blue;
+                font-size: 20px;
+                margin: 6px;
+                color: gray;
+            }
+
+            .botones-paginadora .boton_p {
+                padding: 30px;
+                border: 1px solid blue;
+                font-size: 20px;
+                margin: 6px;
+                color: blue;
+            }
+
+            .botones-paginadora{
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                margin: 0px 100px 0px 100px;
+                width: 1000px;
+            }

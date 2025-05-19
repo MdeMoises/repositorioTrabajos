@@ -1,0 +1,1 @@
+<?php echo substr(strrchr("C:/xampp/htdocs/Repository/trabajos/3/7/2024-Gustavo Enrique López Ramos-678330215f9f0.pdf","/"),1);
